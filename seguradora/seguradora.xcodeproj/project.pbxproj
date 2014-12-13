@@ -16,6 +16,7 @@
 		28529F941A3C6B2E0090DF9D /* seguradoraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529F931A3C6B2E0090DF9D /* seguradoraTests.m */; };
 		28529FA21A3C7B6C0090DF9D /* SegurosTabViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA11A3C7B6C0090DF9D /* SegurosTabViewCtrl.m */; };
 		28529FA51A3C7FFB0090DF9D /* CotacaoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */; };
+		28529FA81A3CC4CA0090DF9D /* SegurosTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA71A3CC4CA0090DF9D /* SegurosTabCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		28529FA11A3C7B6C0090DF9D /* SegurosTabViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegurosTabViewCtrl.m; sourceTree = "<group>"; };
 		28529FA31A3C7FFB0090DF9D /* CotacaoViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CotacaoViewCtrl.h; sourceTree = "<group>"; };
 		28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CotacaoViewCtrl.m; sourceTree = "<group>"; };
+		28529FA61A3CC4CA0090DF9D /* SegurosTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegurosTabCell.h; sourceTree = "<group>"; };
+		28529FA71A3CC4CA0090DF9D /* SegurosTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegurosTabCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				28529F771A3C6B2E0090DF9D /* Supporting Files */,
 				28529FA01A3C7B6C0090DF9D /* SegurosTabViewCtrl.h */,
 				28529FA11A3C7B6C0090DF9D /* SegurosTabViewCtrl.m */,
+				28529FA61A3CC4CA0090DF9D /* SegurosTabCell.h */,
+				28529FA71A3CC4CA0090DF9D /* SegurosTabCell.m */,
 				28529FA31A3C7FFB0090DF9D /* CotacaoViewCtrl.h */,
 				28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */,
 			);
@@ -231,6 +236,7 @@
 			files = (
 				28529F801A3C6B2E0090DF9D /* ViewController.m in Sources */,
 				28529F7D1A3C6B2E0090DF9D /* AppDelegate.m in Sources */,
+				28529FA81A3CC4CA0090DF9D /* SegurosTabCell.m in Sources */,
 				28529FA21A3C7B6C0090DF9D /* SegurosTabViewCtrl.m in Sources */,
 				28529FA51A3C7FFB0090DF9D /* CotacaoViewCtrl.m in Sources */,
 				28529F7A1A3C6B2E0090DF9D /* main.m in Sources */,

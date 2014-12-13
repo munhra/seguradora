@@ -7,15 +7,21 @@
 //
 
 #import "SegurosTabViewCtrl.h"
+#import "SegurosTabCell.h"
 
 @interface SegurosTabViewCtrl ()
 
 @end
 
+NSArray *insurance;
+
 @implementation SegurosTabViewCtrl
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    insurance = [NSArray arrayWithObjects:@"Automóveis",@"Equipamentos Portáteis", @"Aéreo", @"Assitência Viagens", @"Vida", @"Residência", @"Outro", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -40,12 +46,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return [insurance count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"seguroCell" forIndexPath:indexPath];
+    SegurosTabCell *cell = (SegurosTabCell*)[tableView dequeueReusableCellWithIdentifier:@"seguroCell" forIndexPath:indexPath];
+    
+    cell.title.text = [insurance objectAtIndex:indexPath.row];
     
     // Configure the cell...
     
