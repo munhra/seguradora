@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3A50F1EE-0B8E-44AE-905E-2124FFF09612</string>
+	<key>IDESourceControlProjectName</key>
+	<string>seguradora</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DF261436901D2FE6ED8F6083A5B289BD20CE3795</key>
+		<string>https://github.com/munhra/seguradora.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>seguradora/seguradora.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DF261436901D2FE6ED8F6083A5B289BD20CE3795</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/munhra/seguradora.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DF261436901D2FE6ED8F6083A5B289BD20CE3795</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DF261436901D2FE6ED8F6083A5B289BD20CE3795</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Seguradora</string>
+		</dict>
+	</array>
+</dict>
+</plist>

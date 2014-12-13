@@ -14,6 +14,8 @@
 		28529F851A3C6B2E0090DF9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28529F841A3C6B2E0090DF9D /* Images.xcassets */; };
 		28529F881A3C6B2E0090DF9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28529F861A3C6B2E0090DF9D /* LaunchScreen.xib */; };
 		28529F941A3C6B2E0090DF9D /* seguradoraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529F931A3C6B2E0090DF9D /* seguradoraTests.m */; };
+		28529FA21A3C7B6C0090DF9D /* SegurosTabViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA11A3C7B6C0090DF9D /* SegurosTabViewCtrl.m */; };
+		28529FA51A3C7FFB0090DF9D /* CotacaoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		28529F8D1A3C6B2E0090DF9D /* seguradoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = seguradoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28529F921A3C6B2E0090DF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28529F931A3C6B2E0090DF9D /* seguradoraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = seguradoraTests.m; sourceTree = "<group>"; };
+		28529FA01A3C7B6C0090DF9D /* SegurosTabViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegurosTabViewCtrl.h; sourceTree = "<group>"; };
+		28529FA11A3C7B6C0090DF9D /* SegurosTabViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegurosTabViewCtrl.m; sourceTree = "<group>"; };
+		28529FA31A3C7FFB0090DF9D /* CotacaoViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CotacaoViewCtrl.h; sourceTree = "<group>"; };
+		28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CotacaoViewCtrl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				28529F841A3C6B2E0090DF9D /* Images.xcassets */,
 				28529F861A3C6B2E0090DF9D /* LaunchScreen.xib */,
 				28529F771A3C6B2E0090DF9D /* Supporting Files */,
+				28529FA01A3C7B6C0090DF9D /* SegurosTabViewCtrl.h */,
+				28529FA11A3C7B6C0090DF9D /* SegurosTabViewCtrl.m */,
+				28529FA31A3C7FFB0090DF9D /* CotacaoViewCtrl.h */,
+				28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */,
 			);
 			path = seguradora;
 			sourceTree = "<group>";
@@ -221,6 +231,8 @@
 			files = (
 				28529F801A3C6B2E0090DF9D /* ViewController.m in Sources */,
 				28529F7D1A3C6B2E0090DF9D /* AppDelegate.m in Sources */,
+				28529FA21A3C7B6C0090DF9D /* SegurosTabViewCtrl.m in Sources */,
+				28529FA51A3C7FFB0090DF9D /* CotacaoViewCtrl.m in Sources */,
 				28529F7A1A3C6B2E0090DF9D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
