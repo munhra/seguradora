@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CotacaoViewCtrl : UIViewController
+@interface CotacaoViewCtrl : UIViewController <UIPickerViewDelegate,UIPickerViewDataSource>
 
 @end

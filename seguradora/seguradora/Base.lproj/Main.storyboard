@@ -70,6 +70,7 @@
             <objects>
                 <tableViewController title="Seguros" id="I0S-CX-WMz" customClass="SegurosTabViewCtrl" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="22" sectionFooterHeight="22" id="5lw-Ww-Kgt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -134,6 +135,7 @@
                         <viewControllerLayoutGuide type="bottom" id="H18-uN-Hm7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sbC-ZW-Rk5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJy-ck-4ir">
@@ -167,7 +169,107 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="114" y="218" width="248" height="21"/>
+                                    <rect key="frame" x="114" y="205" width="248" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classe de bônus:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUe-mD-alX">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="526" y="205" width="144" height="21"/>
+                                </variation>
+                            </label>
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGs-ne-Wsg">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="526" y="185" width="96" height="125"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="wKn-NR-oGp" id="ylV-jx-Jhn"/>
+                                    <outlet property="delegate" destination="wKn-NR-oGp" id="Jex-h2-scU"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano de fabricação:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0V-55-QI8">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="114" y="310" width="140" height="21"/>
+                                </variation>
+                            </label>
+                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RSl-5y-rmJ">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="114" y="290" width="218" height="125"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="wKn-NR-oGp" id="HM3-ji-Ark"/>
+                                    <outlet property="delegate" destination="wKn-NR-oGp" id="sM3-8h-oiM"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano do modelo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QV-yy-Hnt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="389" y="310" width="118" height="21"/>
+                                </variation>
+                            </label>
+                            <pickerView tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTb-CV-aiP">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="389" y="290" width="218" height="125"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="wKn-NR-oGp" id="oDM-fQ-phH"/>
+                                    <outlet property="delegate" destination="wKn-NR-oGp" id="gq0-s4-lCv"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combustível:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kiz-sE-ea0">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="114" y="420" width="79" height="21"/>
+                                </variation>
+                            </label>
+                            <pickerView tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5GM-VA-sWP">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="114" y="390" width="218" height="125"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="wKn-NR-oGp" id="Y8I-Gi-mA7"/>
+                                    <outlet property="delegate" destination="wKn-NR-oGp" id="3Ow-n4-5JX"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assinale quais itens abaixo seu carro dispõe:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYq-Fj-JU6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="114" y="583" width="345" height="21"/>
+                                </variation>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="86b-zY-ICL">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="114" y="612" width="51" height="31"/>
+                                </variation>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ar Condicionado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MB-NY-aOv">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.62405936454849498" green="0.62405936454849498" blue="0.62405936454849498" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="171" y="617" width="129" height="21"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uf0-4F-kRF">
@@ -175,24 +277,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="114" y="247" width="363" height="30"/>
+                                    <rect key="frame" x="114" y="233" width="363" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classe de bônus:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUe-mD-alX">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="530" y="214" width="144" height="21"/>
-                                </variation>
-                            </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGs-ne-Wsg">
-                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="526" y="181" width="160" height="162"/>
-                                </variation>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -201,9 +288,18 @@
                                 <exclude reference="kd3-nP-3m5"/>
                                 <exclude reference="lrp-Qb-RCR"/>
                                 <exclude reference="LjT-B2-nUT"/>
-                                <exclude reference="Uf0-4F-kRF"/>
                                 <exclude reference="RUe-mD-alX"/>
                                 <exclude reference="fGs-ne-Wsg"/>
+                                <exclude reference="I0V-55-QI8"/>
+                                <exclude reference="RSl-5y-rmJ"/>
+                                <exclude reference="7QV-yy-Hnt"/>
+                                <exclude reference="mTb-CV-aiP"/>
+                                <exclude reference="Kiz-sE-ea0"/>
+                                <exclude reference="5GM-VA-sWP"/>
+                                <exclude reference="cYq-Fj-JU6"/>
+                                <exclude reference="86b-zY-ICL"/>
+                                <exclude reference="8MB-NY-aOv"/>
+                                <exclude reference="Uf0-4F-kRF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -212,9 +308,18 @@
                                 <include reference="kd3-nP-3m5"/>
                                 <include reference="lrp-Qb-RCR"/>
                                 <include reference="LjT-B2-nUT"/>
-                                <include reference="Uf0-4F-kRF"/>
                                 <include reference="RUe-mD-alX"/>
                                 <include reference="fGs-ne-Wsg"/>
+                                <include reference="I0V-55-QI8"/>
+                                <include reference="RSl-5y-rmJ"/>
+                                <include reference="7QV-yy-Hnt"/>
+                                <include reference="mTb-CV-aiP"/>
+                                <include reference="Kiz-sE-ea0"/>
+                                <include reference="5GM-VA-sWP"/>
+                                <include reference="cYq-Fj-JU6"/>
+                                <include reference="86b-zY-ICL"/>
+                                <include reference="8MB-NY-aOv"/>
+                                <include reference="Uf0-4F-kRF"/>
                             </mask>
                         </variation>
                     </view>
@@ -233,6 +338,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cth-Mb-kea"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LxU-Qa-Ur0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -251,6 +357,7 @@
                         <viewControllerLayoutGuide type="bottom" id="frG-wA-Jav"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oZ4-DG-qx1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -269,6 +376,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xis-m0-UVF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IMK-jB-3De">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -287,6 +395,7 @@
                         <viewControllerLayoutGuide type="bottom" id="O9i-D7-wLU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Cm-2t-nqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -345,6 +454,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Ld1-1h-IZ6"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Haa-7O-NDP">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
