@@ -22,10 +22,10 @@ NSArray *numeroPortas;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    classe = [NSArray arrayWithObjects:@"CLASSE A",@"CLASSE B", @"CLASSE C", nil];
-    ano = [NSArray arrayWithObjects:@"2012",@"2013",@"2014",@"2015",@"2016",@"2017", nil];
-    combustivel = [NSArray arrayWithObjects:@"Alcool",@"Gasolina", @"Diesel", nil];
-    numeroPortas = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil];
+    classe = [NSArray arrayWithObjects:@"Classe de bônus",@"CLASSE A",@"CLASSE B", @"CLASSE C", nil];
+    ano = [NSArray arrayWithObjects:@"Ano de fabricação",@"2012",@"2013",@"2014",@"2015",@"2016",@"2017", nil];
+    combustivel = [NSArray arrayWithObjects:@"Combustível",@"Alcool",@"Gasolina", @"Diesel", nil];
+    numeroPortas = [NSArray arrayWithObjects:@"Quantidade de Portas",@"1", @"2", @"3", @"4", @"5", nil];
     
     // Do any additional setup after loading the view.
 }
@@ -43,7 +43,6 @@ NSArray *numeroPortas;
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    
     switch (pickerView.tag) {
         case 1:
             return [classe count];
@@ -55,16 +54,17 @@ NSArray *numeroPortas;
             return [ano count];
         case 4:
             return [combustivel count];
+        case 5:
+            return [numeroPortas count];
         default:
             break;
             return 0;
     }
     return 0;
 }
-
+/*
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    
     switch (pickerView.tag) {
         case 1:
             return [classe objectAtIndex:row];
@@ -76,13 +76,15 @@ NSArray *numeroPortas;
             return [ano objectAtIndex:row];
         case 4:
             return [combustivel objectAtIndex:row];
+        case 5:
+            return [numeroPortas objectAtIndex:row];
         default:
             break;
             return @"";
     }
     
     return @"";
-}
+}*/
 
 -(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
@@ -91,8 +93,17 @@ NSArray *numeroPortas;
     
     if (!pkView){
         
+        CGRect frame = CGRectMake(0.0, 0.0, 70, 30);
+        
+        
         pkView = [[UILabel alloc] init];
-        [pkView setFont:[UIFont fontWithName:@"System" size:14]];
+        
+        //pkView = [[UILabel alloc] initWithFrame:frame];
+        //[pkView setBackgroundColor:[UIColor blackColor]];
+        //[pkView setTextAlignment:UITextAlignmentLeft];
+        
+        [pkView setFont:[UIFont systemFontOfSize:13]];
+        pkView.numberOfLines = 3;
     }
     
     switch (pickerView.tag) {
@@ -108,7 +119,9 @@ NSArray *numeroPortas;
         case 4:
             pkView.text = [combustivel objectAtIndex:row];
             break;
-            
+        case 5:
+            pkView.text = [numeroPortas objectAtIndex:row];
+            break;
         default:
             break;
     }

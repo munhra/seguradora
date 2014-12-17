@@ -17,6 +17,7 @@
 		28529FA21A3C7B6C0090DF9D /* SegurosTabViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA11A3C7B6C0090DF9D /* SegurosTabViewCtrl.m */; };
 		28529FA51A3C7FFB0090DF9D /* CotacaoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */; };
 		28529FA81A3CC4CA0090DF9D /* SegurosTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA71A3CC4CA0090DF9D /* SegurosTabCell.m */; };
+		28809F281A41E6F600E73E85 /* ScrollViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28809F271A41E6F600E73E85 /* ScrollViewCtrl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CotacaoViewCtrl.m; sourceTree = "<group>"; };
 		28529FA61A3CC4CA0090DF9D /* SegurosTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegurosTabCell.h; sourceTree = "<group>"; };
 		28529FA71A3CC4CA0090DF9D /* SegurosTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegurosTabCell.m; sourceTree = "<group>"; };
+		28809F261A41E6F600E73E85 /* ScrollViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewCtrl.h; path = ../ScrollViewCtrl.h; sourceTree = "<group>"; };
+		28809F271A41E6F600E73E85 /* ScrollViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewCtrl.m; path = ../ScrollViewCtrl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 		28529F761A3C6B2E0090DF9D /* seguradora */ = {
 			isa = PBXGroup;
 			children = (
+				28809F261A41E6F600E73E85 /* ScrollViewCtrl.h */,
+				28809F271A41E6F600E73E85 /* ScrollViewCtrl.m */,
 				28529F7B1A3C6B2E0090DF9D /* AppDelegate.h */,
 				28529F7C1A3C6B2E0090DF9D /* AppDelegate.m */,
 				28529F7E1A3C6B2E0090DF9D /* ViewController.h */,
@@ -238,6 +243,7 @@
 				28529F7D1A3C6B2E0090DF9D /* AppDelegate.m in Sources */,
 				28529FA81A3CC4CA0090DF9D /* SegurosTabCell.m in Sources */,
 				28529FA21A3C7B6C0090DF9D /* SegurosTabViewCtrl.m in Sources */,
+				28809F281A41E6F600E73E85 /* ScrollViewCtrl.m in Sources */,
 				28529FA51A3C7FFB0090DF9D /* CotacaoViewCtrl.m in Sources */,
 				28529F7A1A3C6B2E0090DF9D /* main.m in Sources */,
 			);
@@ -432,6 +438,7 @@
 				28529F991A3C6B2E0090DF9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28529F9A1A3C6B2E0090DF9D /* Build configuration list for PBXNativeTarget "seguradoraTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +447,7 @@
 				28529F9C1A3C6B2E0090DF9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
