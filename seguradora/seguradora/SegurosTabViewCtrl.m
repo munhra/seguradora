@@ -27,6 +27,24 @@ NSArray *bgNames;
     iconNames = [NSArray arrayWithObjects:@"car_icon",@"portateis_icons", @"aero_icon", @"viagem_icon", @"vida_icon", @"casa_icon", @"civil_icon", nil];
     bgNames = [NSArray arrayWithObjects:@"car_bg",@"portateis_bg", @"aero_bg", @"viagem_bg", @"vida_bg", @"casa_bg", @"civil_bg", nil];
     
+    //UINavigationBar *navBar = [[self navigationController] navigationBar];
+    CGRect titleFrame = CGRectMake(0, 0, 630, 44);
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:titleFrame];
+    
+    
+    UIFont *titlefont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:27];
+    NSLog(@"%@",[UIFont fontNamesForFamilyName:@"Helvetica Neue"]);
+    UIColor *titleColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f];
+    
+    [titleLabel setText:@"Seguros"];
+    [titleLabel setFont:titlefont];
+    [titleLabel setTextColor:titleColor];
+    //[titleLabel setBackgroundColor:[UIColor blackColor]];
+    [titleLabel setTextAlignment:NSTextAlignmentCenter];
+    [self.navigationItem.backBarButtonItem setTitle:@"XXXX"];
+    
+    self.navigationItem.titleView = titleLabel;
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

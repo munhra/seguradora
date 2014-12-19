@@ -27,6 +27,12 @@ NSArray *numeroPortas;
     combustivel = [NSArray arrayWithObjects:@"Álcool",@"Gasolina", @"Diesel", nil];
     numeroPortas = [NSArray arrayWithObjects:@"01", @"02", @"03", @"04", @"05", nil];
 
+    UIImage *navBarbg = [UIImage imageNamed:@"navbarBg"];
+    
+    UINavigationBar *navBar = [[self navigationController] navigationBar];
+    
+    [navBar setBackgroundImage:navBarbg forBarMetrics:UIBarMetricsDefault];
+    
     
     // Do any additional setup after loading the view.
 }
@@ -65,34 +71,14 @@ NSArray *numeroPortas;
 
 -(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
-    
     UILabel *pkView = (UILabel *)view;
     
     if (!pkView){
-        
-        //CGRect frame = CGRectMake(0.0, 0.0, 70, 30);
-        
-        
         pkView = [[UILabel alloc] init];
-        
         UIFont *pickerfont = [UIFont fontWithName:@"Helvetica Neue" size:14];
-        
         UIColor *pickerColor = [[UIColor alloc] initWithRed:22.0f/255.0f green:68.0f/255.0f blue:94.0f/255.0f alpha:1.0f];
-        
-       
-        
-        NSLog(@"font name %@",[pickerfont familyName]);
-        //[pkView setAttributedText:nil];
-        
-        
-        
-        //pkView = [[UILabel alloc] initWithFrame:frame];
-        //[pkView setBackgroundColor:[UIColor blackColor]];
-        //[pkView setTextAlignment:UITextAlignmentLeft];
-        
         [pkView setFont:pickerfont];
         [pkView setTextColor:pickerColor];
-        
         pkView.numberOfLines = 3;
     }
     
