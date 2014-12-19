@@ -14,6 +14,8 @@
 @end
 
 NSArray *insurance;
+NSArray *iconNames;
+NSArray *bgNames;
 
 @implementation SegurosTabViewCtrl
 
@@ -22,6 +24,8 @@ NSArray *insurance;
     [super viewDidLoad];
     
     insurance = [NSArray arrayWithObjects:@"Automóveis",@"Equipamentos Portáteis", @"Aéreo", @"Assitência Viagens", @"Vida", @"Residência", @"Outro", nil];
+    iconNames = [NSArray arrayWithObjects:@"car_icon",@"portateis_icons", @"aero_icon", @"viagem_icon", @"vida_icon", @"casa_icon", @"civil_icon", nil];
+    bgNames = [NSArray arrayWithObjects:@"car_bg",@"portateis_bg", @"aero_bg", @"viagem_bg", @"vida_bg", @"casa_bg", @"civil_bg", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -52,8 +56,11 @@ NSArray *insurance;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     SegurosTabCell *cell = (SegurosTabCell*)[tableView dequeueReusableCellWithIdentifier:@"seguroCell" forIndexPath:indexPath];
-    
+
+    cell.cellbackground.image = [UIImage imageNamed:[bgNames objectAtIndex:indexPath.row]];
+    cell.icon.image = [UIImage imageNamed:[iconNames objectAtIndex:indexPath.row]];
     cell.title.text = [insurance objectAtIndex:indexPath.row];
+    
     
     // Configure the cell...
     

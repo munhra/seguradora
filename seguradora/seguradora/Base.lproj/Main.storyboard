@@ -12,33 +12,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2kK-Uy-wjB">
-                                <rect key="frame" x="321" y="415" width="158" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seg__0008_background" id="Gen-Yq-w2a">
+                                <rect key="frame" x="0.0" y="63" width="768" height="961"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cotar Agora">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seg__0000_seguroly" id="L2U-AU-QPS">
+                                <rect key="frame" x="16" y="324" width="736" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2kK-Uy-wjB">
+                                <rect key="frame" x="258" y="481" width="253" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Cotar Agora" backgroundImage="seg__0006_bt_normal"/>
+                                <state key="highlighted" backgroundImage="seg__0005_bt_pressed"/>
                                 <connections>
                                     <segue destination="I0S-CX-WMz" kind="push" id="VCy-Lm-Np0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EeE-RK-F1G">
-                                <rect key="frame" x="351" y="459" width="99" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EeE-RK-F1G">
+                                <rect key="frame" x="258" y="521" width="253" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Meus Seguros">
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Meus Seguros" backgroundImage="seg__0006_bt_normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="O45-hD-VHJ" kind="push" id="SHZ-g8-5Cw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seguroly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DPD-ym-N3u">
-                                <rect key="frame" x="303" y="345" width="194" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -46,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1403.52" y="856.32000000000005"/>
+            <point key="canvasLocation" x="1409" y="-1334"/>
         </scene>
         <!--Scroll View Ctrl-->
         <scene sceneID="zDf-Bp-5pX">
@@ -98,30 +100,42 @@
         <scene sceneID="Zg7-Zv-hD6">
             <objects>
                 <tableViewController title="Seguros" id="I0S-CX-WMz" customClass="SegurosTabViewCtrl" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="22" sectionFooterHeight="22" id="5lw-Ww-Kgt">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="170" sectionHeaderHeight="22" sectionFooterHeight="22" id="5lw-Ww-Kgt">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="seguroCell" rowHeight="130" id="iKx-1A-Ccu" customClass="SegurosTabCell">
+                            <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="seguroCell" rowHeight="170" id="iKx-1A-Ccu" customClass="SegurosTabCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iKx-1A-Ccu" id="BQc-wT-KYu">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circlemock" id="BgQ-ex-b20" userLabel="icon">
-                                            <rect key="frame" x="347" y="0.0" width="107" height="97"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_bg" id="cCZ-dj-zJD">
+                                            <rect key="frame" x="0.0" y="0.0" width="792" height="169"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vf5-kG-rZ2" userLabel="title">
-                                            <rect key="frame" x="8" y="104" width="784" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vf5-kG-rZ2" userLabel="title">
+                                            <rect key="frame" x="8" y="132" width="784" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Automóveis">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_icon" id="BgQ-ex-b20" userLabel="icon">
+                                            <rect key="frame" x="347" y="21" width="107" height="97"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cellbackground" destination="cCZ-dj-zJD" id="AO6-dl-Bg5"/>
                                     <outlet property="icon" destination="BgQ-ex-b20" id="HSa-75-uDv"/>
                                     <outlet property="title" destination="Vf5-kG-rZ2" id="a87-ec-mHZ"/>
                                     <segue destination="DB7-6X-Dlb" kind="push" id="jkr-wv-bZz"/>
@@ -138,114 +152,113 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bET-ma-uqs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2332.8000000000002" y="885.7600000000001"/>
+            <point key="canvasLocation" x="2132" y="-59"/>
         </scene>
         <!--Veiculos-->
         <scene sceneID="tFm-Dy-UEb">
             <objects>
                 <viewController title="Veiculos" id="wKn-NR-oGp" customClass="CotacaoViewCtrl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sbC-ZW-Rk5">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" id="hJy-ck-4ir">
-                                <rect key="frame" x="0.0" y="64" width="800" height="133"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mR5-O0-APy">
+                                <rect key="frame" x="0.0" y="64" width="768" height="2000"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <segue destination="hH2-SQ-dqG" kind="embed" id="Rsy-Rm-nya"/>
-                                </connections>
-                            </containerView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circlemock" id="kd3-nP-3m5">
-                                <rect key="frame" x="358" y="72" width="85" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automóveis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lrp-Qb-RCR">
-                                <rect key="frame" x="16" y="152" width="768" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual o modelo do seu veículo ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LjT-B2-nUT">
-                                <rect key="frame" x="114" y="198" width="248" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView tag="1" contentMode="scaleToFill" id="fGs-ne-Wsg">
-                                <rect key="frame" x="494" y="185" width="130" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="wKn-NR-oGp" id="ylV-jx-Jhn"/>
-                                    <outlet property="delegate" destination="wKn-NR-oGp" id="Jex-h2-scU"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView tag="2" contentMode="scaleToFill" id="RSl-5y-rmJ">
-                                <rect key="frame" x="114" y="290" width="218" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="wKn-NR-oGp" id="HM3-ji-Ark"/>
-                                    <outlet property="delegate" destination="wKn-NR-oGp" id="sM3-8h-oiM"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView tag="3" contentMode="scaleToFill" id="mTb-CV-aiP">
-                                <rect key="frame" x="406" y="290" width="218" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="wKn-NR-oGp" id="oDM-fQ-phH"/>
-                                    <outlet property="delegate" destination="wKn-NR-oGp" id="gq0-s4-lCv"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView tag="4" contentMode="scaleToFill" id="5GM-VA-sWP">
-                                <rect key="frame" x="114" y="390" width="218" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="wKn-NR-oGp" id="Y8I-Gi-mA7"/>
-                                    <outlet property="delegate" destination="wKn-NR-oGp" id="3Ow-n4-5JX"/>
-                                </connections>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assinale quais itens abaixo seu carro dispõe:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cYq-Fj-JU6">
-                                <rect key="frame" x="114" y="498" width="345" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="86b-zY-ICL">
-                                <rect key="frame" x="114" y="527" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ar Condicionado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8MB-NY-aOv">
-                                <rect key="frame" x="171" y="532" width="129" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.62405936454849498" green="0.62405936454849498" blue="0.62405936454849498" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Uf0-4F-kRF">
-                                <rect key="frame" x="114" y="218" width="363" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <pickerView tag="5" contentMode="scaleToFill" id="l77-bh-zVF">
-                                <rect key="frame" x="406" y="390" width="218" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="wKn-NR-oGp" id="oQe-fx-fq4"/>
-                                    <outlet property="delegate" destination="wKn-NR-oGp" id="C6q-3O-Aeq"/>
-                                </connections>
-                            </pickerView>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual o modelo do seu veículo ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LjT-B2-nUT">
+                                        <rect key="frame" x="82" y="51" width="248" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView tag="2" contentMode="scaleToFill" id="RSl-5y-rmJ">
+                                        <rect key="frame" x="449" y="263" width="218" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="wKn-NR-oGp" id="HM3-ji-Ark"/>
+                                            <outlet property="delegate" destination="wKn-NR-oGp" id="sM3-8h-oiM"/>
+                                        </connections>
+                                    </pickerView>
+                                    <pickerView tag="3" contentMode="scaleToFill" id="mTb-CV-aiP">
+                                        <rect key="frame" x="82" y="263" width="218" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="wKn-NR-oGp" id="oDM-fQ-phH"/>
+                                            <outlet property="delegate" destination="wKn-NR-oGp" id="gq0-s4-lCv"/>
+                                        </connections>
+                                    </pickerView>
+                                    <pickerView tag="4" contentMode="scaleToFill" id="5GM-VA-sWP">
+                                        <rect key="frame" x="449" y="145" width="218" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="wKn-NR-oGp" id="Y8I-Gi-mA7"/>
+                                            <outlet property="delegate" destination="wKn-NR-oGp" id="3Ow-n4-5JX"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assinale quais itens abaixo seu carro dispõe:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cYq-Fj-JU6">
+                                        <rect key="frame" x="82" y="371" width="345" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="86b-zY-ICL">
+                                        <rect key="frame" x="82" y="410" width="51" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ar Condicionado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8MB-NY-aOv">
+                                        <rect key="frame" x="142" y="415" width="129" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.62405936454849498" green="0.62405936454849498" blue="0.62405936454849498" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Uf0-4F-kRF">
+                                        <rect key="frame" x="82" y="85" width="359" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <pickerView tag="5" contentMode="scaleToFill" id="l77-bh-zVF">
+                                        <rect key="frame" x="82" y="145" width="218" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="wKn-NR-oGp" id="oQe-fx-fq4"/>
+                                            <outlet property="delegate" destination="wKn-NR-oGp" id="C6q-3O-Aeq"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sVm-sR-mz3">
+                                        <rect key="frame" x="363" y="1648" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView tag="1" contentMode="scaleToFill" id="fGs-ne-Wsg">
+                                        <rect key="frame" x="537" y="50" width="130" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="wKn-NR-oGp" id="ylV-jx-Jhn"/>
+                                            <outlet property="delegate" destination="wKn-NR-oGp" id="Jex-h2-scU"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Veículos" id="UqL-GA-Jfb"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="2000"/>
+                    <connections>
+                        <outlet property="scrollView" destination="mR5-O0-APy" id="Lbg-7G-xlW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kV-Ru-SZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4782.7200000000003" y="-181.76000000000002"/>
+            <point key="canvasLocation" x="4074" y="-2232"/>
         </scene>
         <!--Condutores-->
         <scene sceneID="ocS-Aa-CNp">
@@ -260,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZU-J0-FlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4887.3599999999997" y="770.56000000000006"/>
+            <point key="canvasLocation" x="3975" y="435"/>
         </scene>
         <!--Informacoes-->
         <scene sceneID="w6z-FT-Nm1">
@@ -280,17 +293,48 @@
         <!--Online-->
         <scene sceneID="owC-Gc-dbA">
             <objects>
-                <viewController title="Online" id="hYG-iC-aFo" sceneMemberID="viewController">
+                <viewController title="Online" id="hYG-iC-aFo" customClass="CotacaoViewCtrl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IMK-jB-3De">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="VAw-N3-uSW">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="2000"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M2o-VO-L1k">
+                                        <rect key="frame" x="111" y="100" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7SE-pc-Y6S">
+                                        <rect key="frame" x="372" y="1880" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView tag="1" contentMode="scaleToFill" id="jem-os-rDB">
+                                        <rect key="frame" x="478" y="73" width="272" height="162"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </pickerView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contratação Online" id="brS-Hu-B3t"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="2000"/>
+                    <connections>
+                        <outlet property="scrollView" destination="VAw-N3-uSW" id="Xcl-kx-T7y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pr7-NU-1Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5679.3599999999997" y="-184.32000000000002"/>
+            <point key="canvasLocation" x="5227" y="-1861"/>
         </scene>
         <!--Contratacao-->
         <scene sceneID="wRW-mC-Hbc">
@@ -305,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2OI-HH-VYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5733.1199999999999" y="977.92000000000007"/>
+            <point key="canvasLocation" x="5561" y="961"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="82q-Xw-jfd">
@@ -346,14 +390,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuL-8f-7vl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3354.2400000000002" y="547.84000000000003"/>
+            <point key="canvasLocation" x="2890" y="-1929"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JHj-eb-RtQ">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="hH2-SQ-dqG" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Haa-7O-NDP">
-                        <rect key="frame" x="0.0" y="0.0" width="800" height="133"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -365,7 +409,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="car_bg" width="768" height="150"/>
+        <image name="car_icon" width="78" height="78"/>
         <image name="circlemock" width="256" height="256"/>
+        <image name="seg__0000_seguroly" width="244" height="70"/>
+        <image name="seg__0005_bt_pressed" width="250" height="40"/>
+        <image name="seg__0006_bt_normal" width="250" height="40"/>
+        <image name="seg__0008_background" width="768" height="1024"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

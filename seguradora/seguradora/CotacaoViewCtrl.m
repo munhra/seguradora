@@ -27,6 +27,10 @@ NSArray *numeroPortas;
     combustivel = [NSArray arrayWithObjects:@"Combustível",@"Alcool",@"Gasolina", @"Diesel", nil];
     numeroPortas = [NSArray arrayWithObjects:@"Quantidade de Portas",@"1", @"2", @"3", @"4", @"5", nil];
     
+    [scrollView setScrollEnabled:YES];
+    [scrollView setContentSize:CGSizeMake(768, 2000)];
+    
+    
     // Do any additional setup after loading the view.
 }
 
