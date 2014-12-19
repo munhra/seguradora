@@ -1,14 +1,14 @@
 //
-//  CotacaoViewCtrl.m
+//  VeiculoViewCtrl.m
 //  seguradora
 //
-//  Created by Rafael Munhoz on 13/12/14.
+//  Created by Rafael Munhoz on 19/12/14.
 //  Copyright (c) 2014 Rafael Munhoz. All rights reserved.
 //
 
-#import "CotacaoViewCtrl.h"
+#import "VeiculoViewCtrl.h"
 
-@interface CotacaoViewCtrl ()
+@interface VeiculoViewCtrl ()
 
 @end
 
@@ -17,15 +17,16 @@ NSArray *ano;
 NSArray *combustivel;
 NSArray *numeroPortas;
 
-@implementation CotacaoViewCtrl
+@implementation VeiculoViewCtrl
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    classe = [NSArray arrayWithObjects:@"Classe de bônus",@"CLASSE A",@"CLASSE B", @"CLASSE C", nil];
-    ano = [NSArray arrayWithObjects:@"Ano de fabricação",@"2012",@"2013",@"2014",@"2015",@"2016",@"2017", nil];
-    combustivel = [NSArray arrayWithObjects:@"Combustível",@"Alcool",@"Gasolina", @"Diesel", nil];
-    numeroPortas = [NSArray arrayWithObjects:@"Quantidade de Portas",@"1", @"2", @"3", @"4", @"5", nil];
+    classe = [NSArray arrayWithObjects:@"CLASSE A",@"CLASSE B", @"CLASSE C", nil];
+    ano = [NSArray arrayWithObjects:@"2012",@"2013",@"2014",@"2015",@"2016",@"2017", nil];
+    combustivel = [NSArray arrayWithObjects:@"Álcool",@"Gasolina", @"Diesel", nil];
+    numeroPortas = [NSArray arrayWithObjects:@"01", @"02", @"03", @"04", @"05", nil];
+
     
     // Do any additional setup after loading the view.
 }
@@ -39,7 +40,6 @@ NSArray *numeroPortas;
 {
     return 1;
 }
-
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
@@ -62,29 +62,6 @@ NSArray *numeroPortas;
     }
     return 0;
 }
-/*
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-{
-    switch (pickerView.tag) {
-        case 1:
-            return [classe objectAtIndex:row];
-            break;
-        case 2:
-            return [ano objectAtIndex:row];
-            break;
-        case 3:
-            return [ano objectAtIndex:row];
-        case 4:
-            return [combustivel objectAtIndex:row];
-        case 5:
-            return [numeroPortas objectAtIndex:row];
-        default:
-            break;
-            return @"";
-    }
-    
-    return @"";
-}*/
 
 -(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
@@ -93,16 +70,29 @@ NSArray *numeroPortas;
     
     if (!pkView){
         
-        CGRect frame = CGRectMake(0.0, 0.0, 70, 30);
+        //CGRect frame = CGRectMake(0.0, 0.0, 70, 30);
         
         
         pkView = [[UILabel alloc] init];
+        
+        UIFont *pickerfont = [UIFont fontWithName:@"Helvetica Neue" size:14];
+        
+        UIColor *pickerColor = [[UIColor alloc] initWithRed:22.0f/255.0f green:68.0f/255.0f blue:94.0f/255.0f alpha:1.0f];
+        
+       
+        
+        NSLog(@"font name %@",[pickerfont familyName]);
+        //[pkView setAttributedText:nil];
+        
+        
         
         //pkView = [[UILabel alloc] initWithFrame:frame];
         //[pkView setBackgroundColor:[UIColor blackColor]];
         //[pkView setTextAlignment:UITextAlignmentLeft];
         
-        [pkView setFont:[UIFont systemFontOfSize:13]];
+        [pkView setFont:pickerfont];
+        [pkView setTextColor:pickerColor];
+        
         pkView.numberOfLines = 3;
     }
     
@@ -128,6 +118,8 @@ NSArray *numeroPortas;
     
     return pkView;
 }
+
+
 
 /*
 #pragma mark - Navigation

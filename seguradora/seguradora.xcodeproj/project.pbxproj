@@ -19,6 +19,7 @@
 		28529FA81A3CC4CA0090DF9D /* SegurosTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA71A3CC4CA0090DF9D /* SegurosTabCell.m */; };
 		28809F281A41E6F600E73E85 /* ScrollViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28809F271A41E6F600E73E85 /* ScrollViewCtrl.m */; };
 		28809F2B1A41F95D00E73E85 /* ContratOnline.m in Sources */ = {isa = PBXBuildFile; fileRef = 28809F2A1A41F95D00E73E85 /* ContratOnline.m */; };
+		28C8022B1A442D7A004917E9 /* VeiculoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C8022A1A442D7A004917E9 /* VeiculoViewCtrl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		28809F271A41E6F600E73E85 /* ScrollViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewCtrl.m; path = ../ScrollViewCtrl.m; sourceTree = "<group>"; };
 		28809F291A41F95D00E73E85 /* ContratOnline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContratOnline.h; path = ../ContratOnline.h; sourceTree = "<group>"; };
 		28809F2A1A41F95D00E73E85 /* ContratOnline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContratOnline.m; path = ../ContratOnline.m; sourceTree = "<group>"; };
+		28C802291A442D7A004917E9 /* VeiculoViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeiculoViewCtrl.h; sourceTree = "<group>"; };
+		28C8022A1A442D7A004917E9 /* VeiculoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeiculoViewCtrl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 				28809F2A1A41F95D00E73E85 /* ContratOnline.m */,
 				28809F261A41E6F600E73E85 /* ScrollViewCtrl.h */,
 				28809F271A41E6F600E73E85 /* ScrollViewCtrl.m */,
+				28C802281A442B7F004917E9 /* auto */,
 				28529F7B1A3C6B2E0090DF9D /* AppDelegate.h */,
 				28529F7C1A3C6B2E0090DF9D /* AppDelegate.m */,
 				28529F7E1A3C6B2E0090DF9D /* ViewController.h */,
@@ -112,8 +116,6 @@
 				28529FA11A3C7B6C0090DF9D /* SegurosTabViewCtrl.m */,
 				28529FA61A3CC4CA0090DF9D /* SegurosTabCell.h */,
 				28529FA71A3CC4CA0090DF9D /* SegurosTabCell.m */,
-				28529FA31A3C7FFB0090DF9D /* CotacaoViewCtrl.h */,
-				28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */,
 			);
 			path = seguradora;
 			sourceTree = "<group>";
@@ -142,6 +144,17 @@
 				28529F921A3C6B2E0090DF9D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28C802281A442B7F004917E9 /* auto */ = {
+			isa = PBXGroup;
+			children = (
+				28C802291A442D7A004917E9 /* VeiculoViewCtrl.h */,
+				28C8022A1A442D7A004917E9 /* VeiculoViewCtrl.m */,
+				28529FA31A3C7FFB0090DF9D /* CotacaoViewCtrl.h */,
+				28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */,
+			);
+			name = auto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +264,7 @@
 				28529FA21A3C7B6C0090DF9D /* SegurosTabViewCtrl.m in Sources */,
 				28809F281A41E6F600E73E85 /* ScrollViewCtrl.m in Sources */,
 				28529FA51A3C7FFB0090DF9D /* CotacaoViewCtrl.m in Sources */,
+				28C8022B1A442D7A004917E9 /* VeiculoViewCtrl.m in Sources */,
 				28529F7A1A3C6B2E0090DF9D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

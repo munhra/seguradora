@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScrollViewCtrl.h"
 
-@interface CotacaoViewCtrl : UIViewController <UIPickerViewDelegate,UIPickerViewDataSource>{
-    IBOutlet UIScrollView *scrollView;
+@interface CotacaoViewCtrl : ScrollViewCtrl <UIPickerViewDelegate,UIPickerViewDataSource>{
+
 }
 
 @end
