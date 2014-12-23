@@ -28,12 +28,15 @@ NSArray *numeroPortas;
     numeroPortas = [NSArray arrayWithObjects:@"01", @"02", @"03", @"04", @"05", nil];
 
     UIImage *navBarbg = [UIImage imageNamed:@"navbarBg"];
-    
     UINavigationBar *navBar = [[self navigationController] navigationBar];
-    
     [navBar setBackgroundImage:navBarbg forBarMetrics:UIBarMetricsDefault];
     
-    
+    //UITabBar *tabbar = [[self tabBarController] tabBar];
+    //[[UITabBar appearance] setTintColor:[UIColor redColor]];
+    //[[UITabBar appearance] setBarTintColor:[UIColor yellowColor]];
+    //[[UITabBarItem appearance] setTitleTextAttributes:nil forState:nil];
+    //UIImage *tabbarbgimage = [UIImage imageNamed:@"tabbarbg.png"];
+    //[tabbar setBackgroundImage:navBarbg];
     // Do any additional setup after loading the view.
 }
 
