@@ -3,6 +3,20 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[VeiculoViewCtrl viewDidLoad]:VeiculoViewCtrl.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[tabbar bounds]">
+            </PersistentString>
+            <PersistentString
+               value = "[tabbar frame]">
+            </PersistentString>
+            <PersistentString
+               value = "tabbar.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[SegurosTabViewCtrl tableView:cellForRowAtIndexPath:]:SegurosTabViewCtrl.m">
          <PersistentStrings>
             <PersistentString

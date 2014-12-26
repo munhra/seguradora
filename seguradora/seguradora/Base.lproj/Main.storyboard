@@ -150,7 +150,9 @@
                             <outlet property="delegate" destination="I0S-CX-WMz" id="s1R-9g-PjR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5MC-Rm-0vC"/>
+                    <navigationItem key="navigationItem" id="5MC-Rm-0vC">
+                        <barButtonItem key="backBarButtonItem" title="  " id="xB6-Dl-QcJ"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bET-ma-uqs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,7 +163,7 @@
             <objects>
                 <viewController title="Condutores" id="wKn-NR-oGp" customClass="ScrollViewCtrl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sbC-ZW-Rk5">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1951"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mR5-O0-APy">
@@ -171,7 +173,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Condutores" image="seg__0008_02_icon" id="UqL-GA-Jfb"/>
+                    <tabBarItem key="tabBarItem" title="Condutores" image="02_icon_white" id="UqL-GA-Jfb">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="2000"/>
                     <connections>
@@ -187,11 +191,11 @@
             <objects>
                 <viewController title="InformacoesSeg" id="RWB-JZ-auG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LxU-Qa-Ur0">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Informações do Segurado" image="seg__0008_02_icon" id="J7P-WZ-bd4"/>
+                    <tabBarItem key="tabBarItem" title="Informações do Segurado" image="03_icon_white" id="J7P-WZ-bd4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZU-J0-FlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,7 +206,7 @@
             <objects>
                 <tableViewController title="ContratacaoOnline" id="f46-9G-prA" customClass="ContratacaoTabView" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="395" sectionHeaderHeight="22" sectionFooterHeight="22" id="7gQ-u4-AFs">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -478,7 +482,7 @@
                             <outlet property="delegate" destination="f46-9G-prA" id="fJi-JP-MwE"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Cotação Online" id="xpe-hs-qlY"/>
+                    <tabBarItem key="tabBarItem" title="Cotação Online" image="04_icon_white" id="xpe-hs-qlY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAF-Q4-FAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -489,7 +493,7 @@
             <objects>
                 <viewController title="Compra" id="hHh-95-zp3" customClass="CompraViewCtrl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eYK-Wf-uWo">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_bg" id="jLJ-4s-9Cg">
@@ -599,7 +603,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="GVW-Yp-4Mm">
-                                <rect key="frame" x="0.0" y="327" width="768" height="1225"/>
+                                <rect key="frame" x="0.0" y="327" width="768" height="1176"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GpI-Mk-eZR">
@@ -1278,7 +1282,7 @@
             <objects>
                 <viewController title="FinalizarCompra" id="Vmy-63-yUd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jjs-5P-LbU">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finaliza_header" id="ygc-lB-Ue6">
@@ -1512,11 +1516,11 @@
             <objects>
                 <viewController title="Veiculos" id="hYG-iC-aFo" customClass="VeiculoViewCtrl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IMK-jB-3De">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1451"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="VAw-N3-uSW">
-                                <rect key="frame" x="0.0" y="192" width="768" height="1500"/>
+                                <rect key="frame" x="0.0" y="192" width="768" height="1451"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M2o-VO-L1k">
@@ -1963,10 +1967,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Veículos" image="seg__0008_02_icon" id="brS-Hu-B3t">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                    <tabBarItem key="tabBarItem" title="Veículos" image="01_icon_white" id="brS-Hu-B3t">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" id="IWo-bg-V1R"/>
+                    <navigationItem key="navigationItem" title="Cotação" id="IWo-bg-V1R">
+                        <barButtonItem key="backBarButtonItem" title="  " id="m5M-XM-AkK"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1500"/>
                     <connections>
@@ -1982,7 +1988,7 @@
             <objects>
                 <viewController title="Contratacao" id="SDf-e6-1JW" customClass="ContratTabView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Cm-2t-nqJ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_bg" id="tYk-wu-Zv7">
@@ -2008,7 +2014,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="395" sectionHeaderHeight="22" sectionFooterHeight="22" id="OeT-Ao-Gwi">
-                                <rect key="frame" x="0.0" y="251" width="768" height="774"/>
+                                <rect key="frame" x="0.0" y="251" width="768" height="725"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2309,7 +2315,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contratação" image="seg__0003_04_icon" id="vA4-Pm-cWv"/>
+                    <tabBarItem key="tabBarItem" title="Contratação" image="05_icon_white" id="vA4-Pm-cWv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2OI-HH-VYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2340,7 +2346,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="bOw-4I-GHk"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="xzb-Fc-Rey">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" selectionIndicatorImage="tab_bar_selected" itemPositioning="fill" id="xzb-Fc-Rey">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -2358,6 +2364,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="01_icon_white" width="25" height="25"/>
+        <image name="02_icon_white" width="25" height="25"/>
+        <image name="03_icon_white" width="25" height="25"/>
+        <image name="04_icon_white" width="25" height="25"/>
+        <image name="05_icon_white" width="25" height="25"/>
         <image name="barra_encontradas" width="768" height="50"/>
         <image name="bg_button" width="190" height="30"/>
         <image name="bg_info_corretor" width="476" height="267"/>
@@ -2379,12 +2390,11 @@
         <image name="mala_icon" width="60" height="60"/>
         <image name="resumo_bar" width="768" height="50"/>
         <image name="seg__0000_seguroly" width="244" height="70"/>
-        <image name="seg__0003_04_icon" width="25" height="25"/>
         <image name="seg__0005_bt_pressed" width="250" height="40"/>
         <image name="seg__0006_bt_normal" width="250" height="40"/>
-        <image name="seg__0008_02_icon" width="25" height="25"/>
         <image name="seg__0008_background" width="768" height="1024"/>
         <image name="skype_icon" width="60" height="60"/>
+        <image name="tab_bar_selected" width="188" height="49"/>
         <image name="telefone_icon" width="60" height="60"/>
         <image name="user_icon" width="60" height="60"/>
     </resources>

@@ -27,7 +27,8 @@ NSArray *segBgNames;
     segIconNames = [NSArray arrayWithObjects:@"car_icon",@"portateis_icons", @"aero_icon", @"viagem_icon", @"vida_icon", @"casa_icon", @"civil_icon", nil];
     segBgNames = [NSArray arrayWithObjects:@"car_bg",@"portateis_bg", @"aero_bg", @"viagem_bg", @"vida_bg", @"casa_bg", @"civil_bg", nil];
     
-    //UINavigationBar *navBar = [[self navigationController] navigationBar];
+    UINavigationBar *navBar = [[self navigationController] navigationBar];
+    [navBar setTintColor:[UIColor whiteColor]];
     CGRect titleFrame = CGRectMake(0, 0, 630, 44);
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:titleFrame];
     
@@ -40,7 +41,7 @@ NSArray *segBgNames;
     [titleLabel setTextColor:titleColor];
     //[titleLabel setBackgroundColor:[UIColor blackColor]];
     [titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [self.navigationItem.backBarButtonItem setTitle:@"XXXX"];
+    [self.navigationItem.backBarButtonItem setTitle:@""];
     
     self.navigationItem.titleView = titleLabel;
     
