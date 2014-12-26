@@ -1,49 +1,25 @@
 //
-//  SegurosTabViewCtrl.m
+//  ContratacaoTabView.m
 //  seguradora
 //
-//  Created by Rafael Munhoz on 13/12/14.
+//  Created by Rafael Munhoz on 23/12/14.
 //  Copyright (c) 2014 Rafael Munhoz. All rights reserved.
 //
 
-#import "SegurosTabViewCtrl.h"
-#import "SegurosTabCell.h"
+#import "ContratacaoTabView.h"
+#import "ContratacaoTabCell.h"
 
-@interface SegurosTabViewCtrl ()
+@interface ContratacaoTabView ()
 
 @end
 
-NSArray *insurance;
-NSArray *segIconNames;
-NSArray *segBgNames;
+NSArray *iconNames;
 
-@implementation SegurosTabViewCtrl
-
+@implementation ContratacaoTabView
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    insurance = [NSArray arrayWithObjects:@"Automóveis",@"Equipamentos Portáteis", @"Aéreo", @"Assitência Viagens", @"Vida", @"Residência", @"Outro", nil];
-    segIconNames = [NSArray arrayWithObjects:@"car_icon",@"portateis_icons", @"aero_icon", @"viagem_icon", @"vida_icon", @"casa_icon", @"civil_icon", nil];
-    segBgNames = [NSArray arrayWithObjects:@"car_bg",@"portateis_bg", @"aero_bg", @"viagem_bg", @"vida_bg", @"casa_bg", @"civil_bg", nil];
-    
-    //UINavigationBar *navBar = [[self navigationController] navigationBar];
-    CGRect titleFrame = CGRectMake(0, 0, 630, 44);
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:titleFrame];
-    
-    
-    UIFont *titlefont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:27];
-    UIColor *titleColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f];
-    
-    [titleLabel setText:@"Seguros"];
-    [titleLabel setFont:titlefont];
-    [titleLabel setTextColor:titleColor];
-    //[titleLabel setBackgroundColor:[UIColor blackColor]];
-    [titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [self.navigationItem.backBarButtonItem setTitle:@"XXXX"];
-    
-    self.navigationItem.titleView = titleLabel;
-    
+    iconNames = [NSArray arrayWithObjects:@"logo_tropez",@"logo_atmosfere", @"logo_ai", nil];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -67,23 +43,20 @@ NSArray *segBgNames;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [insurance count];
+    return 3;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    SegurosTabCell *cell = (SegurosTabCell*)[tableView dequeueReusableCellWithIdentifier:@"seguroCell" forIndexPath:indexPath];
-
-    cell.cellbackground.image = [UIImage imageNamed:[segBgNames objectAtIndex:indexPath.row]];
-    cell.icon.image = [UIImage imageNamed:[segIconNames objectAtIndex:indexPath.row]];
-    cell.title.text = [insurance objectAtIndex:indexPath.row];
     
+    ContratacaoTabCell *cell = (ContratacaoTabCell*)[tableView dequeueReusableCellWithIdentifier:@"ContratacaoCell" forIndexPath:indexPath];
+    
+    cell.icon.image = [UIImage imageNamed:[iconNames objectAtIndex:indexPath.row]];
     
     // Configure the cell...
     
     return cell;
 }
-
 
 /*
 // Override to support conditional editing of the table view.

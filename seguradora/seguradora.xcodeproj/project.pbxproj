@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28356C5B1A4978C700F7D284 /* ContratacaoTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28356C5A1A4978C700F7D284 /* ContratacaoTabView.m */; };
+		28356C5E1A497C4700F7D284 /* ContratacaoTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28356C5D1A497C4700F7D284 /* ContratacaoTabCell.m */; };
+		28356C611A499A7700F7D284 /* CompraViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28356C601A499A7700F7D284 /* CompraViewCtrl.m */; };
 		28529F7A1A3C6B2E0090DF9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529F791A3C6B2E0090DF9D /* main.m */; };
 		28529F7D1A3C6B2E0090DF9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529F7C1A3C6B2E0090DF9D /* AppDelegate.m */; };
 		28529F801A3C6B2E0090DF9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529F7F1A3C6B2E0090DF9D /* ViewController.m */; };
@@ -17,6 +20,7 @@
 		28529FA21A3C7B6C0090DF9D /* SegurosTabViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA11A3C7B6C0090DF9D /* SegurosTabViewCtrl.m */; };
 		28529FA51A3C7FFB0090DF9D /* CotacaoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */; };
 		28529FA81A3CC4CA0090DF9D /* SegurosTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28529FA71A3CC4CA0090DF9D /* SegurosTabCell.m */; };
+		285DC1FA1A4D69BF00341BAD /* FinalCompraViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 285DC1F91A4D69BF00341BAD /* FinalCompraViewCtrl.m */; };
 		28809F281A41E6F600E73E85 /* ScrollViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28809F271A41E6F600E73E85 /* ScrollViewCtrl.m */; };
 		28809F2B1A41F95D00E73E85 /* ContratOnline.m in Sources */ = {isa = PBXBuildFile; fileRef = 28809F2A1A41F95D00E73E85 /* ContratOnline.m */; };
 		28C8022B1A442D7A004917E9 /* VeiculoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C8022A1A442D7A004917E9 /* VeiculoViewCtrl.m */; };
@@ -34,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28356C591A4978C700F7D284 /* ContratacaoTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContratacaoTabView.h; sourceTree = "<group>"; };
+		28356C5A1A4978C700F7D284 /* ContratacaoTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContratacaoTabView.m; sourceTree = "<group>"; };
+		28356C5C1A497C4700F7D284 /* ContratacaoTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContratacaoTabCell.h; sourceTree = "<group>"; };
+		28356C5D1A497C4700F7D284 /* ContratacaoTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContratacaoTabCell.m; sourceTree = "<group>"; };
+		28356C5F1A499A7700F7D284 /* CompraViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompraViewCtrl.h; sourceTree = "<group>"; };
+		28356C601A499A7700F7D284 /* CompraViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompraViewCtrl.m; sourceTree = "<group>"; };
 		28529F741A3C6B2E0090DF9D /* seguradora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seguradora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28529F781A3C6B2E0090DF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28529F791A3C6B2E0090DF9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,6 +63,8 @@
 		28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CotacaoViewCtrl.m; sourceTree = "<group>"; };
 		28529FA61A3CC4CA0090DF9D /* SegurosTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegurosTabCell.h; sourceTree = "<group>"; };
 		28529FA71A3CC4CA0090DF9D /* SegurosTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegurosTabCell.m; sourceTree = "<group>"; };
+		285DC1F81A4D69BF00341BAD /* FinalCompraViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalCompraViewCtrl.h; sourceTree = "<group>"; };
+		285DC1F91A4D69BF00341BAD /* FinalCompraViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalCompraViewCtrl.m; sourceTree = "<group>"; };
 		28809F261A41E6F600E73E85 /* ScrollViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewCtrl.h; path = ../ScrollViewCtrl.h; sourceTree = "<group>"; };
 		28809F271A41E6F600E73E85 /* ScrollViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewCtrl.m; path = ../ScrollViewCtrl.m; sourceTree = "<group>"; };
 		28809F291A41F95D00E73E85 /* ContratOnline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContratOnline.h; path = ../ContratOnline.h; sourceTree = "<group>"; };
@@ -158,6 +170,14 @@
 				28C8022A1A442D7A004917E9 /* VeiculoViewCtrl.m */,
 				28529FA31A3C7FFB0090DF9D /* CotacaoViewCtrl.h */,
 				28529FA41A3C7FFB0090DF9D /* CotacaoViewCtrl.m */,
+				28356C591A4978C700F7D284 /* ContratacaoTabView.h */,
+				28356C5A1A4978C700F7D284 /* ContratacaoTabView.m */,
+				28356C5C1A497C4700F7D284 /* ContratacaoTabCell.h */,
+				28356C5D1A497C4700F7D284 /* ContratacaoTabCell.m */,
+				28356C5F1A499A7700F7D284 /* CompraViewCtrl.h */,
+				28356C601A499A7700F7D284 /* CompraViewCtrl.m */,
+				285DC1F81A4D69BF00341BAD /* FinalCompraViewCtrl.h */,
+				285DC1F91A4D69BF00341BAD /* FinalCompraViewCtrl.m */,
 			);
 			name = auto;
 			sourceTree = "<group>";
@@ -263,12 +283,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C8022E1A44534F004917E9 /* MenuViewCtrl.m in Sources */,
+				28356C5E1A497C4700F7D284 /* ContratacaoTabCell.m in Sources */,
 				28529F801A3C6B2E0090DF9D /* ViewController.m in Sources */,
+				28356C5B1A4978C700F7D284 /* ContratacaoTabView.m in Sources */,
 				28529F7D1A3C6B2E0090DF9D /* AppDelegate.m in Sources */,
+				28356C611A499A7700F7D284 /* CompraViewCtrl.m in Sources */,
 				28809F2B1A41F95D00E73E85 /* ContratOnline.m in Sources */,
 				28529FA81A3CC4CA0090DF9D /* SegurosTabCell.m in Sources */,
 				28529FA21A3C7B6C0090DF9D /* SegurosTabViewCtrl.m in Sources */,
 				28809F281A41E6F600E73E85 /* ScrollViewCtrl.m in Sources */,
+				285DC1FA1A4D69BF00341BAD /* FinalCompraViewCtrl.m in Sources */,
 				28529FA51A3C7FFB0090DF9D /* CotacaoViewCtrl.m in Sources */,
 				28C8022B1A442D7A004917E9 /* VeiculoViewCtrl.m in Sources */,
 				28529F7A1A3C6B2E0090DF9D /* main.m in Sources */,

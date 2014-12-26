@@ -26,10 +26,11 @@ NSArray *numeroPortas;
     ano = [NSArray arrayWithObjects:@"2012",@"2013",@"2014",@"2015",@"2016",@"2017", nil];
     combustivel = [NSArray arrayWithObjects:@"Álcool",@"Gasolina", @"Diesel", nil];
     numeroPortas = [NSArray arrayWithObjects:@"01", @"02", @"03", @"04", @"05", nil];
-
-    UIImage *navBarbg = [UIImage imageNamed:@"navbarBg"];
-    UINavigationBar *navBar = [[self navigationController] navigationBar];
-    [navBar setBackgroundImage:navBarbg forBarMetrics:UIBarMetricsDefault];
+    [scroller setContentSize:CGSizeMake(768, 1500)];
+    
+    //UIImage *navBarbg = [UIImage imageNamed:@"navbarBg"];
+    //UINavigationBar *navBar = [[self navigationController] navigationBar];
+    //[navBar setBackgroundImage:navBarbg forBarMetrics:UIBarMetricsDefault];
     
     //UITabBar *tabbar = [[self tabBarController] tabBar];
     //[[UITabBar appearance] setTintColor:[UIColor redColor]];
