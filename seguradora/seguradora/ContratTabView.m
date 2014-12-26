@@ -1,44 +1,25 @@
 //
-//  ContratacaoTabView.m
+//  ContratTabView.m
 //  seguradora
 //
-//  Created by Rafael Munhoz on 23/12/14.
+//  Created by Rafael Munhoz on 26/12/14.
 //  Copyright (c) 2014 Rafael Munhoz. All rights reserved.
 //
 
-#import "ContratacaoTabView.h"
+#import "ContratTabView.h"
 #import "ContratacaoTabCell.h"
 
-@interface ContratacaoTabView ()
+@interface ContratTabView ()
 
 @end
 
-NSArray *iconNames;
+NSArray *logoIconNames;
 
-@implementation ContratacaoTabView
+@implementation ContratTabView
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    iconNames = [NSArray arrayWithObjects:@"logo_tropez",@"logo_atmosfere", @"logo_ai", nil];
-    
-    //UIView *mainView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768, 1024)];
-    
-    UIImage *carbg = [UIImage imageNamed:@"car_bg"];
-    
-    UIImageView *fixedHeader = [[UIImageView alloc] initWithImage:carbg];
-    
-    UIView *superview = [self.view superview];
-    
-    [superview addSubview:fixedHeader];
-    
-    //[mainView addSubview:self.view];
-    //[mainView addSubview:fixedHeader];
-    
-    
-    
-    //[self.navigationController.view addSubview:fixedHeader];
-    
-    //[self.view addSubview:fixedHeader];
+    logoIconNames = [NSArray arrayWithObjects:@"logo_tropez",@"logo_atmosfere", @"logo_ai", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -55,28 +36,46 @@ NSArray *iconNames;
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 3;
 }
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([tableView respondsToSelector:@selector(setSeparatorInset:)])
+    {
+        [tableView setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    if ([tableView respondsToSelector:@selector(setLayoutMargins:)])
+    {
+        [tableView setLayoutMargins:UIEdgeInsetsZero];
+    }
+    
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)])
+    {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    ContratacaoTabCell *cell = (ContratacaoTabCell*)[tableView dequeueReusableCellWithIdentifier:@"ContratacaoCell" forIndexPath:indexPath];
+    ContratacaoTabCell *cell = (ContratacaoTabCell*)[tableView dequeueReusableCellWithIdentifier:@"myCell" forIndexPath:indexPath];
     
-    cell.icon.image = [UIImage imageNamed:[iconNames objectAtIndex:indexPath.row]];
+    if (!cell){
+        cell.icon.image = [UIImage imageNamed:[logoIconNames objectAtIndex:indexPath.row]];
+    }
     
-    // Configure the cell...
+    
     
     return cell;
 }
+
 
 /*
 // Override to support conditional editing of the table view.
