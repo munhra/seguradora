@@ -121,6 +121,7 @@
 				28809F2A1A41F95D00E73E85 /* ContratOnline.m */,
 				28809F261A41E6F600E73E85 /* ScrollViewCtrl.h */,
 				28809F271A41E6F600E73E85 /* ScrollViewCtrl.m */,
+				28EFA35B1A515F83008FCCF1 /* meusSeguros */,
 				28C802281A442B7F004917E9 /* auto */,
 				28529F7B1A3C6B2E0090DF9D /* AppDelegate.h */,
 				28529F7C1A3C6B2E0090DF9D /* AppDelegate.m */,
@@ -185,6 +186,14 @@
 				285DC2021A4D93F800341BAD /* ContratTabView.m */,
 			);
 			name = auto;
+			sourceTree = "<group>";
+		};
+		28EFA35B1A515F83008FCCF1 /* meusSeguros */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = meusSeguros;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

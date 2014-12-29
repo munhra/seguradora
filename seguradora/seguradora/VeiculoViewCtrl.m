@@ -70,8 +70,7 @@ NSArray *numeroPortas;
     ((UITabBarItem *)tabBarController.tabBar.items[2]).selectedImage = [UIImage imageNamed:@"tab_bar_selected"];
     ((UITabBarItem *)tabBarController.tabBar.items[3]).selectedImage = [UIImage imageNamed:@"tab_bar_selected"];
     ((UITabBarItem *)tabBarController.tabBar.items[4]).selectedImage = [UIImage imageNamed:@"tab_bar_selected"];
- 
-    /*
+
     
     UITabBarItem *tabitem1 = ((UITabBarItem *)tabBarController.tabBar.items[0]);
     
