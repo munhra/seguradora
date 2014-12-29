@@ -3,16 +3,63 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[CompraViewCtrl viewWillAppear:]:CompraViewCtrl.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController">
+            </PersistentString>
+            <PersistentString
+               value = "self.navigationItem.backBarButtonItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SegurosTabViewCtrl viewDidLoad]:SegurosTabViewCtrl.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationItem.titleView">
+            </PersistentString>
+            <PersistentString
+               value = "self.navigationItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContratTabView prepareForSegue:sender:]:ContratTabView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "segue.destinationViewController">
+            </PersistentString>
+            <PersistentString
+               value = "segue.destinationViewController.navigationBar">
+            </PersistentString>
+            <PersistentString
+               value = "[[segue destinationViewController] navigationBar]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[VeiculoViewCtrl viewDidLoad]:VeiculoViewCtrl.m">
          <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
             <PersistentString
                value = "[tabbar bounds]">
             </PersistentString>
             <PersistentString
-               value = "[tabbar frame]">
+               value = "tabbar.frame">
             </PersistentString>
             <PersistentString
-               value = "tabbar.frame">
+               value = "[tabbar frame]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CompraViewCtrl viewDidLoad]:CompraViewCtrl.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationItem">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

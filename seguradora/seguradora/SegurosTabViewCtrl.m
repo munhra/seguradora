@@ -29,11 +29,11 @@ NSArray *segBgNames;
     
     UINavigationBar *navBar = [[self navigationController] navigationBar];
     [navBar setTintColor:[UIColor whiteColor]];
-    CGRect titleFrame = CGRectMake(0, 0, 630, 44);
+    CGRect titleFrame = CGRectMake(0, 0, 768, 44);
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:titleFrame];
     
     
-    UIFont *titlefont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:27];
+    UIFont *titlefont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
     UIColor *titleColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f];
     
     [titleLabel setText:@"Seguros"];

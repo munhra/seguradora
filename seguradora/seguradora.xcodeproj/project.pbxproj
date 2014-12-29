@@ -26,6 +26,7 @@
 		28809F2B1A41F95D00E73E85 /* ContratOnline.m in Sources */ = {isa = PBXBuildFile; fileRef = 28809F2A1A41F95D00E73E85 /* ContratOnline.m */; };
 		28C8022B1A442D7A004917E9 /* VeiculoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C8022A1A442D7A004917E9 /* VeiculoViewCtrl.m */; };
 		28C8022E1A44534F004917E9 /* MenuViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C8022D1A44534F004917E9 /* MenuViewCtrl.m */; };
+		28EFA35E1A51BB21008FCCF1 /* MeusSegurosViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFA35D1A51BB21008FCCF1 /* MeusSegurosViewCtrl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		28C8022A1A442D7A004917E9 /* VeiculoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeiculoViewCtrl.m; sourceTree = "<group>"; };
 		28C8022C1A44534F004917E9 /* MenuViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewCtrl.h; sourceTree = "<group>"; };
 		28C8022D1A44534F004917E9 /* MenuViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewCtrl.m; sourceTree = "<group>"; };
+		28EFA35C1A51BB21008FCCF1 /* MeusSegurosViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeusSegurosViewCtrl.h; sourceTree = "<group>"; };
+		28EFA35D1A51BB21008FCCF1 /* MeusSegurosViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeusSegurosViewCtrl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +194,8 @@
 		28EFA35B1A515F83008FCCF1 /* meusSeguros */ = {
 			isa = PBXGroup;
 			children = (
+				28EFA35C1A51BB21008FCCF1 /* MeusSegurosViewCtrl.h */,
+				28EFA35D1A51BB21008FCCF1 /* MeusSegurosViewCtrl.m */,
 			);
 			name = meusSeguros;
 			path = ..;
@@ -299,6 +304,7 @@
 			files = (
 				28C8022E1A44534F004917E9 /* MenuViewCtrl.m in Sources */,
 				28356C5E1A497C4700F7D284 /* ContratacaoTabCell.m in Sources */,
+				28EFA35E1A51BB21008FCCF1 /* MeusSegurosViewCtrl.m in Sources */,
 				28529F801A3C6B2E0090DF9D /* ViewController.m in Sources */,
 				285DC2031A4D93F800341BAD /* ContratTabView.m in Sources */,
 				28356C5B1A4978C700F7D284 /* ContratacaoTabView.m in Sources */,

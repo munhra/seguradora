@@ -21,6 +21,8 @@ NSArray *logoIconNames;
     [super viewDidLoad];
     logoIconNames = [NSArray arrayWithObjects:@"logo_tropez",@"logo_atmosfere", @"logo_ai", nil];
     
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -111,14 +113,25 @@ NSArray *logoIconNames;
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+   
+    //[[[[segue destinationViewController] navigationBar] backItem] setTitle:@"aaaaa"];
+    
+    //[[[segue.destinationViewController navigationController] navigationItem] setTitle:@"6666666"];
+
+    
+    
+    
+    //segue.destinationViewController.navigationController.navigationItem.backBarButtonItem =
+    //[[UIBarButtonItem alloc] initWithTitle:@"title"
+    //                                 style:UIBarButtonItemStylePlain
+    //                                target:nil
+    //                                action:nil];
+
 }
-*/
+
 
 @end

@@ -7,7 +7,7 @@
         <!--MeusSeguros-->
         <scene sceneID="mUA-r7-w7k">
             <objects>
-                <viewController title="MeusSeguros" id="wNV-rW-7l5" sceneMemberID="viewController">
+                <viewController title="MeusSeguros" id="wNV-rW-7l5" customClass="MeusSegurosViewCtrl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WmF-IR-aEQ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -477,7 +477,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bET-ma-uqs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="2"/>
+            <point key="canvasLocation" x="1919" y="-1750"/>
         </scene>
         <!--Condutores-->
         <scene sceneID="tFm-Dy-UEb">
@@ -814,7 +814,7 @@
             <objects>
                 <viewController title="Compra" id="hHh-95-zp3" customClass="CompraViewCtrl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eYK-Wf-uWo">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_bg" id="jLJ-4s-9Cg">
@@ -924,7 +924,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="GVW-Yp-4Mm">
-                                <rect key="frame" x="0.0" y="327" width="768" height="1176"/>
+                                <rect key="frame" x="0.0" y="327" width="768" height="1225"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GpI-Mk-eZR">
@@ -1587,7 +1587,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8s2-VZ-jw8"/>
+                    <navigationItem key="navigationItem" id="8s2-VZ-jw8">
+                        <barButtonItem key="backBarButtonItem" title="  " id="vXe-x7-Ybf"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1600"/>
                     <connections>
@@ -1601,9 +1603,9 @@
         <!--FinalizarCompra-->
         <scene sceneID="Xu1-zb-60w">
             <objects>
-                <viewController title="FinalizarCompra" id="Vmy-63-yUd" sceneMemberID="viewController">
+                <viewController title="FinalizarCompra" id="Vmy-63-yUd" customClass="FinalCompraViewCtrl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jjs-5P-LbU">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finaliza_header" id="ygc-lB-Ue6">
@@ -1824,7 +1826,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iyB-CM-HdL"/>
+                    <navigationItem key="navigationItem" id="iyB-CM-HdL">
+                        <barButtonItem key="backBarButtonItem" title="  " id="2af-fX-jPZ"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1024"/>
                 </viewController>
@@ -2309,7 +2313,7 @@
             <objects>
                 <viewController title="Contratacao" id="SDf-e6-1JW" customClass="ContratTabView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Cm-2t-nqJ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_bg" id="tYk-wu-Zv7">
@@ -2335,7 +2339,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="395" sectionHeaderHeight="22" sectionFooterHeight="22" id="OeT-Ao-Gwi">
-                                <rect key="frame" x="0.0" y="251" width="768" height="725"/>
+                                <rect key="frame" x="0.0" y="251" width="768" height="774"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2563,7 +2567,7 @@
                                                         </attributedString>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="hHh-95-zp3" kind="push" id="tNf-5m-XJV"/>
+                                                        <segue destination="hHh-95-zp3" kind="push" id="nDV-Kk-zLT"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CzR-yM-cNn">
@@ -2637,10 +2641,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contratação" image="05_icon_white" id="vA4-Pm-cWv"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="vn3-gr-k14" userLabel="Navigation Item">
+                        <barButtonItem key="backBarButtonItem" title="  " id="Qrs-mo-VLV"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2OI-HH-VYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4081" y="-2347"/>
+            <point key="canvasLocation" x="4233" y="-2203"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="82q-Xw-jfd">
@@ -2681,7 +2690,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Rd-9z-c6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2293" y="-3473"/>
+            <point key="canvasLocation" x="2783" y="-3481"/>
         </scene>
     </scenes>
     <resources>
@@ -2735,6 +2744,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="tNf-5m-XJV"/>
+        <segue reference="nDV-Kk-zLT"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -29,27 +29,18 @@ NSArray *numeroPortas;
     [scroller setContentSize:CGSizeMake(768, 1500)];
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Helvetica Neue" size:10.0f], NSFontAttributeName, nil] forState:UIControlStateNormal];
-    
     UIImage *tabBarbg = [UIImage imageNamed:@"tabbar_bg"];
-    //UINavigationBar *navBar = [[self navigationController] navigationBar];
-    //[navBar setBackgroundImage:navBarbg forBarMetrics:UIBarMetricsDefault];
-    
     UITabBar *tabbar = [[self tabBarController] tabBar];
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
-    //[[UITabBar appearance] setBarTintColor:[UIColor yellowColor]];
-    //[[UITabBarItem appearance] setTitleTextAttributes:nil forState:nil];
-    //UIImage *tabbarbgimage = [UIImage imageNamed:@"tabbarbg.png"];
     [tabbar setBackgroundImage:tabBarbg];
-    // Do any additional setup after loading the view.
    
-    
     UINavigationBar *navBar = [[self navigationController] navigationBar];
     [navBar setTintColor:[UIColor whiteColor]];
     CGRect titleFrame = CGRectMake(0, 0, 630, 44);
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:titleFrame];
     
     
-    UIFont *titlefont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:27];
+    UIFont *titlefont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
     UIColor *titleColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f];
     
     [titleLabel setText:@"Cotação"];
@@ -57,25 +48,11 @@ NSArray *numeroPortas;
     [titleLabel setTextColor:titleColor];
     //[titleLabel setBackgroundColor:[UIColor blackColor]];
     [titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [self.navigationItem.backBarButtonItem setTitle:@"XXXX"];
     
-    //self.navigationItem.title = @"Cotação";
-
+    UINavigationController *navCom = (UINavigationController *) [self.navigationController.viewControllers objectAtIndex:2];
+    navCom.navigationItem.titleView = titleLabel;
     
     
-    /*
-    UITabBarController *tabBarController = [self tabBarController] ;
-    ((UITabBarItem *)tabBarController.tabBar.items[0]).selectedImage = [UIImage imageNamed:@"tab_bar_selected"];
-    ((UITabBarItem *)tabBarController.tabBar.items[1]).selectedImage = [UIImage imageNamed:@"tab_bar_selected"];
-    ((UITabBarItem *)tabBarController.tabBar.items[2]).selectedImage = [UIImage imageNamed:@"tab_bar_selected"];
-    ((UITabBarItem *)tabBarController.tabBar.items[3]).selectedImage = [UIImage imageNamed:@"tab_bar_selected"];
-    ((UITabBarItem *)tabBarController.tabBar.items[4]).selectedImage = [UIImage imageNamed:@"tab_bar_selected"];
-
-    
-    UITabBarItem *tabitem1 = ((UITabBarItem *)tabBarController.tabBar.items[0]);
-    
-    [tabitem1 setImageInsets:UIEdgeInsetsZero];*/
-
 }
 
 

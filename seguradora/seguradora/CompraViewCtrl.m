@@ -24,6 +24,35 @@ NSArray *bancos;
     bancos = [NSArray arrayWithObjects:@"Bradesco",@"Itaú",@"Banco do Brasil", nil];
     [scroller setContentSize:CGSizeMake(768, 1600)];
     // Do any additional setup after loading the view.
+    
+    UINavigationBar *navBar = [[self navigationController] navigationBar];
+    [navBar setTintColor:[UIColor whiteColor]];
+    CGRect titleFrame = CGRectMake(0, 0, 630, 44);
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:titleFrame];
+    
+    
+    UIFont *titlefont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
+    UIColor *titleColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f];
+    
+    [titleLabel setText:@"Cotação"];
+    [titleLabel setFont:titlefont];
+    [titleLabel setTextColor:titleColor];
+    //[titleLabel setBackgroundColor:[UIColor blackColor]];
+    [titleLabel setTextAlignment:NSTextAlignmentCenter];
+    
+    UINavigationController *navCom = (UINavigationController *) [self.navigationController.viewControllers objectAtIndex:3];
+    
+    navCom.navigationItem.titleView = titleLabel;
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    UINavigationController *navCom = (UINavigationController *) [self.navigationController.viewControllers objectAtIndex:2];
+    navCom.navigationItem.backBarButtonItem =  [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                                style:UIBarButtonItemStylePlain
+                                                                               target:nil
+                                                                               action:nil];
 }
 
 - (void)didReceiveMemoryWarning {

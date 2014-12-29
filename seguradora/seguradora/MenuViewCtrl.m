@@ -17,13 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //UIImage *navBarbg = [UIImage imageNamed:@"navbarBg"];
+    
     UINavigationBar *navBar = [[self navigationController] navigationBar];
-    //[navBar setBackgroundImage:navBarbg forBarMetrics:UIBarMetricsDefault];
-    
     [navBar setBarTintColor:[UIColor colorWithRed:38.0f/255.0f green:55.0f/255.0f blue:77.0f/255.0f alpha:1]];
-    
-
 }
 
 - (void)didReceiveMemoryWarning {
