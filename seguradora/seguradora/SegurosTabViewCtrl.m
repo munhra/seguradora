@@ -29,6 +29,7 @@ NSArray *segBgNames;
     
     UINavigationBar *navBar = [[self navigationController] navigationBar];
     [navBar setTintColor:[UIColor whiteColor]];
+    [navBar setHidden:NO];
     CGRect titleFrame = CGRectMake(0, 0, 768, 44);
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:titleFrame];
     

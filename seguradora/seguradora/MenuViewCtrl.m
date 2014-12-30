@@ -20,6 +20,13 @@
     
     UINavigationBar *navBar = [[self navigationController] navigationBar];
     [navBar setBarTintColor:[UIColor colorWithRed:38.0f/255.0f green:55.0f/255.0f blue:77.0f/255.0f alpha:1]];
+    //[navBar setHidden:YES];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    UINavigationBar *navBar = [[self navigationController] navigationBar];
+    [navBar setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {
