@@ -34,6 +34,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)login:(id)sender
+{
+    NSLog(@"Login !!");
+    [UIView animateWithDuration:1 animations:^{
+        [loginView setAlpha:0];
+    } completion:^(BOOL finished) {
+        NSLog(@"Alpha Animation complete");
+    }];
+
+    [UIView animateWithDuration:0.75 delay:0.3 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        [menuButtonsView setTransform:CGAffineTransformTranslate(menuButtonsView.transform, 0, -640)];
+    } completion:^(BOOL finished) {
+            NSLog(@"Translation Animation complete");
+    }];
+}
+
 /*
 #pragma mark - Navigation
 

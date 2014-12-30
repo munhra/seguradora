@@ -20,4 +20,30 @@
     // Configure the view for the selected state
 }
 
+-(IBAction)mostrarDetalhes:(id)sender
+{
+    NSLog(@"Show Details !");
+    
+    UIButton *detailButton = (UIButton *)sender;
+    
+    //[UIView animateWithDuration:0.5 animations:^{
+    //    [detailButton setAlpha:0];
+    //}];
+    
+    [detailButton setTitle:@"Esconder Detalhes" forState:UIControlStateNormal];
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        if (detailButton.tag == 10) {
+            [self.detailsView setAlpha:1];
+            [self.hideDetailButtons setAlpha:1];
+            [self.showDetailButtons setAlpha:0];
+        }else{
+            [self.detailsView setAlpha:0];
+            [self.showDetailButtons setAlpha:1];
+            [self.hideDetailButtons setAlpha:0];
+        }
+    }];
+    
+}
+
 @end

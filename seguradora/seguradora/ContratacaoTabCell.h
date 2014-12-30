@@ -14,5 +14,10 @@
 @property(weak,nonatomic) IBOutlet UILabel *avistaValue;
 @property(weak,nonatomic) IBOutlet UILabel *cartaoValue;
 @property(weak,nonatomic) IBOutlet UILabel *boletoValue;
+@property(weak,nonatomic) IBOutlet UIView *detailsView;
+@property(weak,nonatomic) IBOutlet UIView *showDetailButtons;
+@property(weak,nonatomic) IBOutlet UIView *hideDetailButtons;
+
+-(IBAction)mostrarDetalhes:(id)sender;
 
 @end

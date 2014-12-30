@@ -69,9 +69,8 @@ NSArray *logoIconNames;
     
     ContratacaoTabCell *cell = (ContratacaoTabCell*)[tableView dequeueReusableCellWithIdentifier:@"myCell" forIndexPath:indexPath];
     
-    if (!cell){
-        cell.icon.image = [UIImage imageNamed:[logoIconNames objectAtIndex:indexPath.row]];
-    }
+    cell.icon.image = [UIImage imageNamed:[logoIconNames objectAtIndex:indexPath.row]];
+    
     
     
     

@@ -28,7 +28,7 @@ NSArray *numeroPortas;
     numeroPortas = [NSArray arrayWithObjects:@"01", @"02", @"03", @"04", @"05", nil];
     [scroller setContentSize:CGSizeMake(768, 1500)];
     
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Helvetica Neue" size:10.0f], NSFontAttributeName, nil] forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Helvetica Neue" size:11.0f], NSFontAttributeName, nil] forState:UIControlStateNormal];
     UIImage *tabBarbg = [UIImage imageNamed:@"tabbar_bg"];
     UITabBar *tabbar = [[self tabBarController] tabBar];
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];

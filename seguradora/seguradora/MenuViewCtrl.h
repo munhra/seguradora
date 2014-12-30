@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface MenuViewCtrl : UIViewController
+{
+    IBOutlet UIView *loginView;
+    IBOutlet UIView *menuButtonsView;
+}
+
+-(IBAction)login:(id)sender;
 
 @end

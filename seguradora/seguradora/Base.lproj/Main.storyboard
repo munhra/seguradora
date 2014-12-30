@@ -341,96 +341,135 @@
                                 <rect key="frame" x="16" y="204" width="736" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2kK-Uy-wjB">
-                                <rect key="frame" x="258" y="802" width="250" height="40"/>
+                            <view contentMode="scaleToFill" id="kIm-fm-dI5">
+                                <rect key="frame" x="207" y="364" width="353" height="439"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <state key="normal" title="Cotar Agora" backgroundImage="seg__0006_bt_normal"/>
-                                <state key="highlighted" backgroundImage="seg__0005_bt_pressed"/>
-                                <connections>
-                                    <segue destination="I0S-CX-WMz" kind="push" id="VCy-Lm-Np0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EeE-RK-F1G">
-                                <rect key="frame" x="258" y="850" width="250" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" id="6b5-VS-RbW">
+                                        <rect key="frame" x="66" y="59" width="221" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Usuário">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" id="975-Gg-O1Q">
+                                        <rect key="frame" x="66" y="106" width="221" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Senha">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="PYN-Qc-iLc">
+                                        <rect key="frame" x="105" y="212" width="143" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Esqueci minha senha">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue-Italic"/>
+                                                        <font key="NSOriginalFont" size="14" name="HelveticaNeue-Italic"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oT0-kR-29q">
+                                        <rect key="frame" x="51" y="164" width="250" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <state key="normal" title="Login" backgroundImage="seg__0006_bt_normal"/>
+                                        <state key="highlighted" backgroundImage="seg__0005_bt_pressed"/>
+                                        <connections>
+                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchDown" id="kZB-rn-iir"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="s5I-v9-mlo">
+                                        <rect key="frame" x="51" y="292" width="250" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <state key="normal" title="Continuar com facebook" backgroundImage="seg__0006_bt_normal"/>
+                                        <state key="highlighted" backgroundImage="seg__0005_bt_pressed"/>
+                                        <connections>
+                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchDown" id="Rs7-k9-oix"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_white_line" id="IiC-Wp-LUj">
+                                        <rect key="frame" x="39" y="97" width="274" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_icon_user" id="qAu-Ot-1kE">
+                                        <rect key="frame" x="45" y="67" width="13" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_cadeado_icon" id="1xT-3G-Gll">
+                                        <rect key="frame" x="45" y="114" width="13" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tfs-3G-v6W">
+                                        <rect key="frame" x="51" y="340" width="250" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <state key="normal" title="Continuar com google" backgroundImage="seg__0006_bt_normal"/>
+                                        <state key="highlighted" backgroundImage="seg__0005_bt_pressed"/>
+                                        <connections>
+                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchDown" id="ulJ-Eg-tat"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="jOX-Hf-n0w">
+                                <rect key="frame" x="207" y="1050" width="353" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <state key="normal" title="Meus Seguros" backgroundImage="seg__0006_bt_normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="wNV-rW-7l5" kind="push" id="aqh-B3-PQ6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oT0-kR-29q">
-                                <rect key="frame" x="257" y="521" width="250" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <state key="normal" title="Login" backgroundImage="seg__0006_bt_normal"/>
-                                <state key="highlighted" backgroundImage="seg__0005_bt_pressed"/>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" id="6b5-VS-RbW">
-                                <rect key="frame" x="289" y="413" width="221" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Usuário">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" id="975-Gg-O1Q">
-                                <rect key="frame" x="289" y="474" width="221" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Senha">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_white_line" id="IiC-Wp-LUj">
-                                <rect key="frame" x="246" y="457" width="274" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_icon_user" id="qAu-Ot-1kE">
-                                <rect key="frame" x="257" y="421" width="13" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_cadeado_icon" id="1xT-3G-Gll">
-                                <rect key="frame" x="257" y="482" width="13" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="PYN-Qc-iLc">
-                                <rect key="frame" x="311" y="569" width="143" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Esqueci minha senha">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Italic"/>
-                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Italic"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2kK-Uy-wjB">
+                                        <rect key="frame" x="51" y="20" width="250" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <state key="normal" title="Cotar Agora" backgroundImage="seg__0006_bt_normal"/>
+                                        <state key="highlighted" backgroundImage="seg__0005_bt_pressed"/>
+                                        <connections>
+                                            <segue destination="I0S-CX-WMz" kind="push" id="VCy-Lm-Np0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EeE-RK-F1G">
+                                        <rect key="frame" x="51" y="68" width="250" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <state key="normal" title="Meus Seguros" backgroundImage="seg__0006_bt_normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="wNV-rW-7l5" kind="push" id="aqh-B3-PQ6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="odc-6P-ri1">
                         <barButtonItem key="backBarButtonItem" title=" " id="2LC-hV-1rE"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="loginView" destination="kIm-fm-dI5" id="eCK-Zq-9JA"/>
+                        <outlet property="menuButtonsView" destination="jOX-Hf-n0w" id="3ES-5g-8V6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -558,7 +597,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Condutores" image="02_icon_white" id="UqL-GA-Jfb">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="2000"/>
@@ -579,7 +618,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Informações do Segurado" image="03_icon_white" id="J7P-WZ-bd4"/>
+                    <tabBarItem key="tabBarItem" title="Info. do Segurado" image="03_icon_white" id="J7P-WZ-bd4">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZU-J0-FlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -589,276 +630,16 @@
         <scene sceneID="Crz-wr-jgz">
             <objects>
                 <tableViewController title="ContratacaoOnline" id="f46-9G-prA" customClass="ContratacaoTabView" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="395" sectionHeaderHeight="22" sectionFooterHeight="22" id="7gQ-u4-AFs">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="22" sectionFooterHeight="22" id="7gQ-u4-AFs">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContratacaoCell" rowHeight="395" id="SaU-Ta-Na3" customClass="ContratacaoTabCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContratacaoCell" rowHeight="160" id="SaU-Ta-Na3" customClass="ContratacaoTabCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SaU-Ta-Na3" id="aQm-mu-wV6">
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rRv-hm-72h">
-                                            <rect key="frame" x="211" y="91" width="173" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Preço do seguro:">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="20" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dIg-Zv-IxB">
-                                            <rect key="frame" x="609" y="91" width="61" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Á vista">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YCi-nW-TGW">
-                                            <rect key="frame" x="211" y="120" width="96" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Franquia:">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="20" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5lM-48-hwP">
-                                            <rect key="frame" x="609" y="108" width="120" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="R$ 2.900,00">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cpF-gW-udL">
-                                            <rect key="frame" x="368" y="91" width="123" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="R$ 4.000,00">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="20" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZwB-Jh-vLn">
-                                            <rect key="frame" x="297" y="120" width="123" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="R$ 2.118,00">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="20" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="TAN-Xc-EpO">
-                                            <rect key="frame" x="211" y="169" width="144" height="33"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" backgroundImage="contrat_button_normal">
-                                                <attributedString key="attributedTitle">
-                                                    <fragment content="Ver Detalhes">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                            </state>
-                                        </button>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="1aD-nx-sag">
-                                            <rect key="frame" x="542" y="88" width="51" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3MD-0f-O2u">
-                                            <rect key="frame" x="609" y="136" width="127" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Cartão de crédito">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FkX-Dk-OCQ">
-                                            <rect key="frame" x="609" y="153" width="120" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="3x R$ 1.000,00">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="nE3-69-htj">
-                                            <rect key="frame" x="542" y="134" width="51" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TmD-sg-vRO">
-                                            <rect key="frame" x="609" y="181" width="127" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Boleto">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NQK-3g-2GV">
-                                            <rect key="frame" x="609" y="199" width="120" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="R$ 3.000,00">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="II4-De-fWc">
-                                            <rect key="frame" x="542" y="179" width="51" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </switch>
-                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_tropez" id="iHz-Bx-kij">
-                                            <rect key="frame" x="8" y="83" width="195" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3av-jO-w9B">
-                                            <rect key="frame" x="609" y="225" width="127" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Franquia">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SAA-lt-be7">
-                                            <rect key="frame" x="609" y="241" width="127" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Reduzida">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="KnI-zw-0YU">
-                                            <rect key="frame" x="542" y="223" width="51" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mNT-fE-qAJ">
-                                            <rect key="frame" x="609" y="269" width="127" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Franquia">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FwT-le-az4">
-                                            <rect key="frame" x="609" y="285" width="127" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Reduzida">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="QXa-1N-zfU">
-                                            <rect key="frame" x="542" y="267" width="51" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </switch>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="9kf-U0-aFG">
-                                            <rect key="frame" x="542" y="330" width="144" height="33"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" backgroundImage="contrat_button_normal">
-                                                <attributedString key="attributedTitle">
-                                                    <fragment content="Comprar">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                            </state>
-                                            <connections>
-                                                <segue destination="hHh-95-zp3" kind="push" id="bXP-Lj-G1G"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="avistaValue" destination="5lM-48-hwP" id="Lr4-a7-qF8"/>
-                                    <outlet property="boletoValue" destination="NQK-3g-2GV" id="ABA-S5-rUK"/>
-                                    <outlet property="cartaoValue" destination="FkX-Dk-OCQ" id="tZR-kL-Wyy"/>
-                                    <outlet property="icon" destination="iHz-Bx-kij" id="f99-m8-5z1"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -866,7 +647,9 @@
                             <outlet property="delegate" destination="f46-9G-prA" id="fJi-JP-MwE"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Cotação Online" image="04_icon_white" id="xpe-hs-qlY"/>
+                    <tabBarItem key="tabBarItem" title="Cotação Online" image="04_icon_white" id="xpe-hs-qlY">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAF-Q4-FAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2356,7 +2139,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Veículos" image="01_icon_white" id="brS-Hu-B3t">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="Cotação" id="IWo-bg-V1R">
                         <barButtonItem key="backBarButtonItem" title="  " id="m5M-XM-AkK"/>
@@ -2401,13 +2184,13 @@
                                 <rect key="frame" x="0.0" y="201" width="768" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="395" sectionHeaderHeight="22" sectionFooterHeight="22" id="OeT-Ao-Gwi">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="376" sectionHeaderHeight="22" sectionFooterHeight="22" id="OeT-Ao-Gwi">
                                 <rect key="frame" x="0.0" y="251" width="768" height="774"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="395" id="2qq-kd-L5k" customClass="ContratacaoTabCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="376" id="2qq-kd-L5k" customClass="ContratacaoTabCell">
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2qq-kd-L5k" id="ndR-37-MBX">
@@ -2469,7 +2252,7 @@
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="wxk-Hu-zxW">
+                                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="wxk-Hu-zxW">
                                                     <rect key="frame" x="226" y="145" width="144" height="33"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" backgroundImage="contrat_button_normal">
@@ -2482,6 +2265,9 @@
                                                             </fragment>
                                                         </attributedString>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="mostrarDetalhes:" destination="2qq-kd-L5k" eventType="touchUpInside" id="QxH-fl-xaB"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Q1-bi-tPu">
                                                     <rect key="frame" x="611" y="99" width="127" height="28"/>
@@ -2665,9 +2451,292 @@
                                                     <rect key="frame" x="556" y="50" width="51" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </switch>
+                                                <view alpha="0.0" contentMode="scaleToFill" id="BoX-Tf-5jF">
+                                                    <rect key="frame" x="226" y="199" width="263" height="148"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pTu-Cn-llT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="176" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Colisão, Incêndio e Roubo (Casco)">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oca-XG-dn1">
+                                                            <rect key="frame" x="186" y="0.0" width="17" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="R$">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gWB-wR-KPl">
+                                                            <rect key="frame" x="208" y="0.0" width="49" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="990,98">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZcI-a9-Fdh">
+                                                            <rect key="frame" x="0.0" y="24" width="176" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="RCF-V DM">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i3e-UU-hlc">
+                                                            <rect key="frame" x="186" y="24" width="17" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="R$">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XyM-GF-Qz5">
+                                                            <rect key="frame" x="208" y="24" width="49" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="302,42">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vHh-hI-GmI">
+                                                            <rect key="frame" x="0.0" y="49" width="176" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="RCF-V DC">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tBL-EI-awR">
+                                                            <rect key="frame" x="187" y="50" width="16" height="20"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="R$">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xKk-5E-YHi">
+                                                            <rect key="frame" x="208" y="49" width="49" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="71,77">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lRs-8Z-ddb">
+                                                            <rect key="frame" x="0.0" y="73" width="176" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="APP Monte">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PSe-PX-Riv">
+                                                            <rect key="frame" x="186" y="73" width="17" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="R$">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z0p-tY-tyf">
+                                                            <rect key="frame" x="208" y="73" width="49" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="41,33">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iMr-yS-1Dn">
+                                                            <rect key="frame" x="0.0" y="97" width="176" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="APP Invalidez permanente">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gvR-bJ-SCz">
+                                                            <rect key="frame" x="186" y="97" width="17" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="R$">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="en7-6U-mc4">
+                                                            <rect key="frame" x="208" y="97" width="49" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="41,33">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WdK-Dc-7wC">
+                                                            <rect key="frame" x="0.0" y="122" width="176" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Prêmio Líquido total">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cAd-cN-d04">
+                                                            <rect key="frame" x="187" y="123" width="16" height="20"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="R$">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5PZ-Xq-scb">
+                                                            <rect key="frame" x="208" y="122" width="49" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="1447,83">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.31372549019607843" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <button opaque="NO" alpha="0.0" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="g9t-SJ-ziC">
+                                                    <rect key="frame" x="226" y="145" width="144" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" backgroundImage="contrat_button_normal">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="Esconder Detalhes">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.086274509803921567" green="0.26666666666666666" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="mostrarDetalhes:" destination="2qq-kd-L5k" eventType="touchUpInside" id="N9d-sk-4Wg"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="detailsView" destination="BoX-Tf-5jF" id="qxe-Vr-kIZ"/>
+                                            <outlet property="hideDetailButtons" destination="g9t-SJ-ziC" id="eWp-js-p3I"/>
+                                            <outlet property="icon" destination="CJp-aC-4PU" id="OEo-mS-i54"/>
+                                            <outlet property="showDetailButtons" destination="wxk-Hu-zxW" id="2ce-yz-fUh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -2703,7 +2772,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contratação" image="05_icon_white" id="vA4-Pm-cWv"/>
+                    <tabBarItem key="tabBarItem" title="Contratação" image="05_icon_white" id="vA4-Pm-cWv">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vn3-gr-k14" userLabel="Navigation Item">
                         <barButtonItem key="backBarButtonItem" title="  " id="Qrs-mo-VLV"/>
@@ -2809,7 +2880,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="nDV-Kk-zLT"/>
-    </inferredMetricsTieBreakers>
 </document>
