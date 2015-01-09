@@ -19,7 +19,8 @@
     // Do any additional setup after loading the view.
     
     UINavigationBar *navBar = [[self navigationController] navigationBar];
-    [navBar setBarTintColor:[UIColor colorWithRed:38.0f/255.0f green:55.0f/255.0f blue:77.0f/255.0f alpha:1]];
+    [navBar setBarTintColor:[UIColor colorWithRed:0.0f/255.0f green:22.0f/255.0f blue:37.0f/255.0f alpha:1]];
+    //[navBar setBarTintColor:[UIColor colorWithRed:0.0f/255.0f green:255.0f/255.0f blue:0.0f/255.0f alpha:1]];
     //[navBar setHidden:YES];
 }
 

@@ -592,6 +592,12 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mR5-O0-APy">
                                 <rect key="frame" x="0.0" y="64" width="768" height="2000"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2condutores" id="gnJ-gk-YeJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="767"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -616,6 +622,12 @@
                     <view key="view" contentMode="scaleToFill" id="LxU-Qa-Ur0">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3infodosegurado" id="qf7-Aa-JvG">
+                                <rect key="frame" x="0.0" y="1" width="768" height="975"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info. do Segurado" image="03_icon_white" id="J7P-WZ-bd4">
@@ -2833,6 +2845,8 @@
         <image name="03_icon_white" width="25" height="25"/>
         <image name="04_icon_white" width="25" height="25"/>
         <image name="05_icon_white" width="25" height="25"/>
+        <image name="2condutores" width="768" height="761"/>
+        <image name="3infodosegurado" width="768" height="761"/>
         <image name="barra_encontradas" width="768" height="50"/>
         <image name="bg_apolices" width="125" height="30"/>
         <image name="bg_button" width="190" height="30"/>
